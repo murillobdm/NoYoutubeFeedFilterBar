@@ -1,0 +1,18 @@
+{
+
+  "description": "Simply remove Youtube Feed Filter Chip Bar",
+  "manifest_version": 2,
+  "name": "NoYoutubeFeedFilterBar",
+  "version": "1.0",
+  "homepage_url": "https://github.com/murillodbm/NoYoutubeFeedFilterBar",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["noyoutubefeedfilterbar.js"]
+    }
+  ]
+}
